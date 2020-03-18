@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             
+             x:Class="ARZHD.Settings">
+    <ContentPage.Content>
+        <TableView x:Name="settings" Margin="20" Grid.Row="2" Grid.ColumnSpan="3">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label x:Name="lang" Text="Язык" Grid.Row="0" Grid.Column="0" VerticalOptions="End" Style="{DynamicResource TitleStyle}"></Label>
+                            <Picker x:Name="picker" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Title="Выберете язык" TitleColor="Gray">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Русский</x:String>
+                                        <x:String>English</x:String>
+                                        <x:String>中国人</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                            <Label x:Name="city" Text="Город" Grid.Row="1" Grid.Column="0" VerticalOptions="End" Style="{DynamicResource TitleStyle}"></Label>
+                            <Picker x:Name="picker1" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Title="Выберете город" TitleColor="Gray">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Ижевск</x:String>
+                                        <x:String>Москва</x:String>
+                                        <x:String>Санкт-Петербург</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

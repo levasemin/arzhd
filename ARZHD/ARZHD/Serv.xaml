@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ARZHD.Serv">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions >
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ImageButton x:Name="pharmacy" Source="pharmacy.png" Grid.Column="0" Grid.Row="0" BackgroundColor="#F44336" CornerRadius="20" BorderColor="gray" BorderWidth="1" Margin="15"/>
+            <ImageButton x:Name="food" Source="food.png" Grid.Column="0" Grid.Row="1" BackgroundColor="#F44336" CornerRadius="20" BorderColor="gray" BorderWidth="1" Margin="15"/>
+            <ImageButton x:Name="station" Source="station.png" Grid.Column="1" Grid.Row="0" BackgroundColor="#F44336" CornerRadius="20" BorderColor="gray" BorderWidth="1" Margin="15"/>
+            <ImageButton x:Name ="shop" Source="shop.png" Grid.Column="1" Grid.Row="1" BackgroundColor="#F44336" CornerRadius="20" BorderColor="gray" BorderWidth="1" Margin="15"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

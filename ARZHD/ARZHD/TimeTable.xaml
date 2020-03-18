@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             Title = "Расписание"
+             x:Class="ARZHD.TimeTable">
+    <ContentPage.Content>
+        <Grid Margin="10" x:Name="LEF">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.8*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+            <Entry x:Name="cityfrom" Placeholder="Откуда" Grid.Column="0" Grid.Row="0"/>
+            <Entry x:Name="cityto" Placeholder="Куда" Grid.Column="1" Grid.Row="0"/>
+            <DatePicker x:Name="date" Grid.Column="2" Grid.Row="0" HorizontalOptions="Center"/>
+            <Button x:Name="startfind" Text="Найти" Clicked="Find"  Grid.Column="2" Grid.Row="1" ></Button>
+            <CheckBox x:Name="beornot"  Grid.Column="1" Grid.Row="1" CheckedChanged="Checkbeornot" VerticalOptions="Start" Color="#F44336"></CheckBox>
+            <Label x:Name="lk" Text="Места в наличии:"  Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start" Margin="0, 4, 0, 0"></Label>
+            <Label x:Name="empty" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center" Style="{DynamicResource TitleStyle}"/>
+            <ListView x:Name="trainslistview" Grid.Row="2" Grid.ColumnSpan="3" SeparatorColor="#F44336" Margin="10" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:ARZHD"
+             x:Class="ARZHD.StartPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="-7" Margin="-4">
+            <Grid.RowDefinitions >
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Navig" Grid.Row="0" Text="Навигация" FontSize="40" TextColor="white" Style="{DynamicResource TitleStyle}"></Button>
+            <Button x:Name="Service" Grid.Row="1" Text="Сервисы" FontSize="40" TextColor="white" Style="{DynamicResource TitleStyle}"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
