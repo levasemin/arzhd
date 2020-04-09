@@ -15,16 +15,18 @@ namespace ARZHD
         public bool itemclass;
         class Pharma
         {
-            public Pharma(string name, string time, string desc)
+            public Pharma(string name, string time = null, string desc = null, string price = null)
             {
                 this.Name = name;
                 this.Desc = desc;
                 this.Time = time;
+                this.Price = price;
             }
 
             public string Name { private set; get; }
             public string Desc { private set; get; }
             public string Time { private set; get; }
+            public string Price { private set; get; }
         };
         public Pharmacy(bool item)
         {
@@ -76,7 +78,7 @@ namespace ARZHD
         private async void Serviceslist_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Pharma service = (Pharma)e.Item;
-            await Navigation.PushAsync(new Info(service.Name, service.Time, service.Desc, itemclass));
+            await Navigation.PushAsync(new Info(itemclass, service.Name, service.Time, service.Price, service.Desc));
         }
     
     }

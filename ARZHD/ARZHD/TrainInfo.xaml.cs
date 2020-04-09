@@ -93,7 +93,7 @@ namespace ARZHD
             ScrollView scrollView = new ScrollView();
             layout.Spacing = 10;
             scrollView.Content = layout;
-            this.Content = scrollView;
+            Content = scrollView;
         }
     }
    

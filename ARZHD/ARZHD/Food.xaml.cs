@@ -11,16 +11,18 @@ namespace ARZHD
         public bool itemclass;
         class Cafe
         {
-            public Cafe(string name, string time, string desc)
+            public Cafe(string name, string time = null, string desc = null, string price = null)
             {
                 this.Name = name;
                 this.Desc = desc;
                 this.Time = time;
+                this.Price = price;
             }
 
             public string Name { private set; get; }
             public string Desc { private set; get; }
             public string Time { private set; get; }
+            public string Price { private set; get; }
         };
         public Food(bool item)
         {
@@ -74,7 +76,7 @@ namespace ARZHD
         private async void Cafeslist_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Cafe cafe = (Cafe)e.Item;
-            await Navigation.PushAsync(new Info(cafe.Name, cafe.Time, cafe.Desc, itemclass));
+            await Navigation.PushAsync(new Info(itemclass, cafe.Name, cafe.Time, cafe.Price, cafe.Desc));
         }
     }
 }

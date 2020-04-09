@@ -12,30 +12,50 @@ namespace ARZHD
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Info : ContentPage
     {
-        public Info(string name, string time, string desc, bool item)
+        public Info(bool item, string name=null, string time=null, string price=null, string desc=null)
         {
             InitializeComponent();
+            var layout = new StackLayout();
+            Title = name;
             if (item == false)
             {
-                worktimetitle.TextColor = Color.FromHex("#FFFFFF");
-                worktime.TextColor = Color.FromHex("#FFFFFF");
-                descr.TextColor = Color.FromHex("#FFFFFF");
-                description.TextColor = Color.FromHex("#FFFFFF");
                 BackgroundColor = Color.FromHex("#424242");
+                if (time != null)
+                {
+                    layout.Children.Add(new Label() { Text = "Время работы:", TextColor = Color.FromHex("#FFFFFF"), Style = Device.Styles.TitleStyle });
+                    layout.Children.Add(new Label() { Text = time, TextColor = Color.FromHex("#FFFFFF"), Style = Device.Styles.TitleStyle, FontSize = 19 });
+                }
+                if (price != null)
+                {
+                    layout.Children.Add(new Label() { Text = "Цена:", TextColor = Color.FromHex("#FFFFFF"), Style = Device.Styles.TitleStyle });
+                    layout.Children.Add(new Label() { Text = price, TextColor = Color.FromHex("#FFFFFF"), Style = Device.Styles.TitleStyle, FontSize = 19 });
+                }
+                if (desc != null)
+                {
+                    layout.Children.Add(new Label() { Text = "Описание:", TextColor = Color.FromHex("#FFFFFF"), Style = Device.Styles.TitleStyle });
+                    layout.Children.Add(new Label() { Text = desc, TextColor = Color.FromHex("#FFFFFF"), Style = Device.Styles.TitleStyle, FontSize = 19 });
+                }
             }
             else 
             {
-                worktimetitle.TextColor = Color.FromHex("#000000");
-                worktime.TextColor = Color.FromHex("#000000");
-                descr.TextColor = Color.FromHex("#000000");
-                description.TextColor = Color.FromHex("#000000");
                 BackgroundColor = Color.FromHex("#FFFFFF");
+                if (time != null)
+                {
+                    layout.Children.Add(new Label() { Text = "Время работы:", TextColor = Color.FromHex("Black"), Style = Device.Styles.TitleStyle });
+                    layout.Children.Add(new Label() { Text = time, TextColor = Color.FromHex("Black"), Style = Device.Styles.TitleStyle, FontSize = 19 });
+                }
+                if (price != null)
+                {
+                    layout.Children.Add(new Label() { Text = "Цена:", TextColor = Color.FromHex("Black"), Style= Device.Styles.TitleStyle});
+                    layout.Children.Add(new Label() { Text = price, TextColor = Color.FromHex("Black"), Style = Device.Styles.TitleStyle, FontSize = 19 });
+                }
+                if (desc != null)
+                {
+                    layout.Children.Add(new Label() { Text = "Описание:", TextColor = Color.FromHex("Black"), Style = Device.Styles.TitleStyle });
+                    layout.Children.Add(new Label() { Text = desc, TextColor = Color.FromHex("Black"), Style = Device.Styles.TitleStyle, FontSize = 19 });
+                }
             }
-            Title = name;
-            worktimetitle.Text = "Время работы:";
-            worktime.Text = time;
-            descr.Text = "Описание:";
-            description.Text = desc;
+            
             ToolbarItem tb = new ToolbarItem()
             {
                 Order = ToolbarItemOrder.Primary,
@@ -46,6 +66,10 @@ namespace ARZHD
                 }
             };
             ToolbarItems.Add(tb);
+            ScrollView scrollView = new ScrollView();
+            layout.Margin = 16;
+            scrollView.Content = layout;
+            Content = scrollView;
         }
     }
 }
