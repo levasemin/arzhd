@@ -65,11 +65,17 @@ namespace ARZHD
                     File = "way2.png"
                 }
             };
+            tb.Clicked += Tb_Clicked;
             ToolbarItems.Add(tb);
             ScrollView scrollView = new ScrollView();
             layout.Margin = 16;
             scrollView.Content = layout;
             Content = scrollView;
+        }
+
+        private async void Tb_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Ошибка", "Вы находитесь не на Ижевском вокзале", "Ok");
         }
     }
 }

@@ -25,9 +25,9 @@ namespace ARZHD
             await Navigation.PushAsync(new MainPage());
         }
 
-        private void Navig_Clicked(object sender, EventArgs e)
+        private async void Navig_Clicked(object sender, EventArgs e)
         {
-            Console.WriteLine(1);
+            await DisplayAlert("Ошибка", "Вы находитесь не на Ижевском вокзале.", "Ok");
         }
     }
 }
