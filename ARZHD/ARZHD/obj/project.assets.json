@@ -983,11 +983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj",
+      "projectUniqueName": "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj",
       "projectName": "ARZHDF2.0",
-      "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj",
+      "projectPath": "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj",
       "packagesPath": "C:\\Users\\levce\\.nuget\\packages\\",
-      "outputPath": "D:\\ARZHD\\ARZHD\\ARZHD\\obj\\",
+      "outputPath": "C:\\arzhd\\ARZHD\\ARZHD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1056,7 +1056,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

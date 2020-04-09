@@ -1550,11 +1550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ARZHD\\ARZHD\\ARZHD.iOS\\ARZHD.iOS.csproj",
+      "projectUniqueName": "C:\\arzhd\\ARZHD\\ARZHD.iOS\\ARZHD.iOS.csproj",
       "projectName": "ARZHD.iOS",
-      "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD.iOS\\ARZHD.iOS.csproj",
+      "projectPath": "C:\\arzhd\\ARZHD\\ARZHD.iOS\\ARZHD.iOS.csproj",
       "packagesPath": "C:\\Users\\levce\\.nuget\\packages\\",
-      "outputPath": "D:\\ARZHD\\ARZHD\\ARZHD.iOS\\obj\\",
+      "outputPath": "C:\\arzhd\\ARZHD\\ARZHD.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1575,8 +1575,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj": {
-              "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj"
+            "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj": {
+              "projectPath": "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj"
             }
           }
         }

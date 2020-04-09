@@ -14,6 +14,8 @@ namespace ARZHD
             BackgroundColor = color;
             station.Clicked += Station_Clicked;
             food.Clicked += Food_Clicked;
+            shop.Clicked += Shop_Clicked;
+            pharmacy.Clicked += Pharmacy_Clicked;
             Title = "Сервисы";
             if (color == Color.FromHex("#FFFFFF"))
             {
@@ -33,6 +35,11 @@ namespace ARZHD
             }
         }
 
+        private async void Pharmacy_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pharmacy(item));
+        }
+
         private async void Food_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Food(item));
@@ -41,6 +48,10 @@ namespace ARZHD
         private async void Station_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Stationserv(item));
+        }
+        private async void Shop_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Shops(item));
         }
     }
 }

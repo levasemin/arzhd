@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "dgSpecHash": "owmBYxpdokYpF/2eumeIc6BHLm/iXZ6onFdpP0hkcqRh4lKuiYbFdlMpoAR64pVzVYZ6vgHmmD2QSZ3A0+wt1g==",
+  "success": true,
+  "projectFilePath": "C:\\arzhd\\ARZHD\\ARZHD.iOS\\ARZHD.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\levce\\.nuget\\packages\\anglesharp\\0.13.0\\anglesharp.0.13.0.nupkg.sha512",
+    "C:\\Users\\levce\\.nuget\\packages\\jquery\\3.4.1\\jquery.3.4.1.nupkg.sha512",
+    "C:\\Users\\levce\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\levce\\.nuget\\packages\\refit\\5.0.23\\refit.5.0.23.nupkg.sha512",
+    "C:\\Users\\levce\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\levce\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\levce\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Обнаружено понижение версии пакета Xamarin.Essentials с 1.5.1 на 1.3.1. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n ARZHD.iOS -> ARZHDF2.0 -> Xamarin.Essentials (>= 1.5.1) \r\n ARZHD.iOS -> Xamarin.Essentials (>= 1.3.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Обнаружено понижение версии пакета Newtonsoft.Json с 12.0.3 на 11.0.2. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n ARZHD.iOS -> ARZHDF2.0 -> Refit 5.0.23 -> Newtonsoft.Json (>= 12.0.3) \r\n ARZHD.iOS -> Newtonsoft.Json (>= 11.0.2)",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

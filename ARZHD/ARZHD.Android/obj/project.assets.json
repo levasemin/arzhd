@@ -2405,11 +2405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ARZHD\\ARZHD\\ARZHD.Android\\ARZHD.Android.csproj",
+      "projectUniqueName": "C:\\arzhd\\ARZHD\\ARZHD.Android\\ARZHD.Android.csproj",
       "projectName": "ARZHD.Android",
-      "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD.Android\\ARZHD.Android.csproj",
+      "projectPath": "C:\\arzhd\\ARZHD\\ARZHD.Android\\ARZHD.Android.csproj",
       "packagesPath": "C:\\Users\\levce\\.nuget\\packages\\",
-      "outputPath": "D:\\ARZHD\\ARZHD\\ARZHD.Android\\obj\\",
+      "outputPath": "C:\\arzhd\\ARZHD\\ARZHD.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2430,8 +2430,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj": {
-              "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj"
+            "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj": {
+              "projectPath": "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj"
             }
           }
         }

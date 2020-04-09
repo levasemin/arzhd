@@ -9002,11 +9002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ARZHD\\ARZHD\\ARZHD.UWP\\ARZHD.UWP.csproj",
+      "projectUniqueName": "C:\\arzhd\\ARZHD\\ARZHD.UWP\\ARZHD.UWP.csproj",
       "projectName": "ARZHD.UWP",
-      "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD.UWP\\ARZHD.UWP.csproj",
+      "projectPath": "C:\\arzhd\\ARZHD\\ARZHD.UWP\\ARZHD.UWP.csproj",
       "packagesPath": "C:\\Users\\levce\\.nuget\\packages\\",
-      "outputPath": "D:\\ARZHD\\ARZHD\\ARZHD.UWP\\obj\\",
+      "outputPath": "C:\\arzhd\\ARZHD\\ARZHD.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9028,8 +9028,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj": {
-              "projectPath": "D:\\ARZHD\\ARZHD\\ARZHD\\ARZHD.csproj"
+            "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj": {
+              "projectPath": "C:\\arzhd\\ARZHD\\ARZHD\\ARZHD.csproj"
             }
           }
         }

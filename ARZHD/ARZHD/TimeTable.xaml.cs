@@ -18,6 +18,7 @@ namespace ARZHD
             {{'А', 'a'}, {'Б', 'b'}, {'В', 'v'}, {'Г', 'g'}, {'Д', 'd'}, {'Е','e'}, {'Ж', 'j'}, {'З','z'}, {'И','i'}, {'К', 'k'}, {'Л','l'}, {'М', 'm'}, {'Н','n'}, {'О', 'o'}, {'П', 'p'}, {'Р', 'r'}, {'С', 's'}, {'Т', 't'}, {'У', 'u'}, {'Ф', 'f'}, {'Х', 'h'}, {'Ц', 'c'}};
         public Dictionary<char, string> words = new Dictionary<char, string>()
         { {'Ч',"ch"}, {'Ш',"sh"}, {'Щ',"sch"}, {'Э', "e!!"}, {'Ю',"yu"}, {'Я', "ya"}};
+        public bool? searching = null;
         class Train
         {
             public Train(string name, List<string> time, string day, Dictionary<string, string> types)
@@ -70,6 +71,11 @@ namespace ARZHD
              
     private async void Find(object sender, EventArgs e)
         {
+            if (item)
+                empty.TextColor = Color.FromHex("#424242");
+            else
+                empty.TextColor = Color.FromHex("#FFFFFF");
+            searching = true;
             empty.Text = "Чух-чух-чух...";
             trainsbe = new List<Train>();
             trainsnotbe = new List<Train>();
@@ -187,6 +193,7 @@ namespace ARZHD
                 { trainsbe.Add(new Train(name, times, day.Replace('.', '/'), types)); }
                 else {trainsnotbe.Add(new Train(name, times, day.Replace('.', '/'), types)); }
             }
+            searching = false;
             Show();
         }
         private void Checkbeornot(object sender, EventArgs e) { Show(); }
@@ -199,7 +206,7 @@ namespace ARZHD
             trainslistview.SelectionMode = 0;
             trainslistview.HasUnevenRows = true;
             if (item == false) trainslistview.SeparatorColor = Color.FromHex("#FFFFFF");
-            if (trains.Count == 0)
+            if (trains.Count == 0 && searching == false)
             {
                 empty.Text = "Поездов нет";
                 if (item)
@@ -207,7 +214,7 @@ namespace ARZHD
                 else
                     empty.TextColor = Color.FromHex("#FFFFFF");
             }
-            else empty.Text = "";
+            else if (trains.Count != 0 && searching == false) empty.Text = "";
             trainslistview.ItemTemplate = new DataTemplate(() =>
             {
                 Label nameLabel = new Label();
